@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/photos?useUnicode=true&characterEncoding=UTF-8
+    data-username: root
+    data-password:
+
+#Õ®”√mapper≈‰÷√
+mapper:
+  mappers:
+   - tk.mybatis.mapper.common.Mapper
+   - tk.mybatis.mapper.common.MySqlMapper
+  not-empty: true
+  identity: MYSQL
+server:
+  port: 8088
