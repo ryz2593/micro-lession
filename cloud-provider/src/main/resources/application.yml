@@ -7,6 +7,10 @@ spring:
     url: jdbc:mysql://localhost:3306/photos?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password:
+  cloud:
+    zookeeper:
+      connect-string: 127.0.0.1:2181
+
 
 mybatis:
   configuration:
