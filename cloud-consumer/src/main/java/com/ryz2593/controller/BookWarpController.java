@@ -15,6 +15,13 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class BookWarpController {
 
+    //服务发现组件
+    //eureka (Spring Cloud 量身定制) 2.0版本之后，闭源
+    //consul
+    //zookeeper(推荐)
+    //负载均衡
+    //客户端负载均衡(ribbon), 服务端负载均衡(nginx)
+
     @Autowired
     private RestTemplate restTemplate;
 
