@@ -10,11 +10,15 @@ spring:
   cloud:
     zookeeper:
       connect-string: 127.0.0.1:2181
-
+  application:
+    name: provider
+  main:
+    allow-bean-definition-overriding: true
 
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
+
 
 logging:
   level:

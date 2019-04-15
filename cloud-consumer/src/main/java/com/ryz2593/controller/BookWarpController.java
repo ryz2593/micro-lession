@@ -27,6 +27,6 @@ public class BookWarpController {
 
     @GetMapping("warp/book/{bookId}")
     public BookInfoVo getBookVo(@PathVariable Integer bookId) {
-        return restTemplate.getForObject("http://localhost:8082/book/" + bookId, BookInfoVo.class);
+        return restTemplate.getForObject("http://provider/book/" + bookId, BookInfoVo.class);
     }
 }
